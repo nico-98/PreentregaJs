@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
 </head>
 <body>
+    <select id="productoSelect">
+        <option value="">Selecciona un producto</option>
+    </select>
     
+    <input type="number" id="cantidadInput" placeholder="Cantidad">
+
+    <label for="ivaCheckbox">Aplicar IVA</label>
+    <input type="checkbox" id="ivaCheckbox">
+
+    <button id="comprarBtn">Comprar</button>
+    
+    <div id="resultado"></div>
+
+    <div id="historialContainer">
+        <h2>Historial de Compras</h2>
+        <ul id="historialList"></ul>
+    </div>
+
+    <script src="./json.js"></script>
 </body>
-<script src="json.js"></script>
 </html>
